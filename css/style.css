@@ -5,7 +5,7 @@
   font-weight: 400;
   font-display: swap;
   src: url('../fonts/montserrat-v18-latin-regular.woff2') format('woff2'),
-       url('../fonts/montserrat-v18-latin-regular.woff') format('woff');
+  url('../fonts/montserrat-v18-latin-regular.woff') format('woff');
 
 }
 /* montserrat-500 - latin */
@@ -15,7 +15,7 @@
   font-weight: 500;
   font-display: swap;
   src: url('../fonts/montserrat-v18-latin-500.woff2') format('woff2'),
-       url('../fonts/montserrat-v18-latin-500.woff') format('woff');
+  url('../fonts/montserrat-v18-latin-500.woff') format('woff');
 }
 /* montserrat-600 - latin */
 @font-face {
@@ -24,7 +24,7 @@
   font-weight: 600;
   font-display: swap;
   src: url('../fonts/montserrat-v18-latin-600.woff2') format('woff2'),
-       url('../fonts/montserrat-v18-latin-600.woff') format('woff');
+  url('../fonts/montserrat-v18-latin-600.woff') format('woff');
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -33,7 +33,7 @@
   font-weight: 700;
   font-display: swap;
   src: url('../fonts/montserrat-v18-latin-700.woff2') format('woff2'),
-       url('../fonts/montserrat-v18-latin-700.woff') format('woff');
+  url('../fonts/montserrat-v18-latin-700.woff') format('woff');
 }
 
 /* GLOBAL STYLES */
@@ -72,13 +72,22 @@ img{
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1005px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
+
+.site-main{
+width: 100%;
+max-width: 1300px;
+padding-left: 5px;
+padding-right: 5px;
+margin-left: auto;
+margin-right: auto;
+}
 
 /* SITE-HEADER */
 .site-header {
@@ -100,7 +109,7 @@ img{
   margin-left: auto;
   font-size: 16px;
   line-height: 28px;
-  font-weight: 600; 
+  font-weight: 600;
   font-family: "Montserrat" sans-serif;
   color: #252B42;
 
@@ -115,12 +124,15 @@ img{
 
 /* HERO */
 .site-hero {
-  padding: 73px 217px 220px 217px;
   background-image: url(../img/hero-img.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   content: "";
+}
+
+.site-hero-bg{
+  padding: 73px 217px 150px 217px;
 }
 .site-hero-content {
   align-items: center;
@@ -152,13 +164,20 @@ background-position: center center;
   font-weight: 500;
   text-align: center;
 }
-.device-stote {
-}
-.play-store-button {
-  background-color: #FA4A0C;
+.device-store {
+  display: flex;
+  justify-content: center;
 
 }
+.play-store-button {
+  margin-right: 34px;
+  border: 0;
+  background-color: #fa4A0c;
+  border: 1px solid #fa4A0c;
+}
+
 .button {
+  display: inline-block;
   border-radius: 30px;
   padding: 16px 58px;
   background-color: none;
@@ -173,3 +192,17 @@ background-position: center center;
 }
 .app-store-button {
 }
+
+.button:hover{
+  opacity: 0.6;
+}
+.button:active{
+  background-color: #6D2005;
+  opacity: 0.4;
+}
+
+
+/* APP DESIGN  */
+.app-design-wrapper {
+}
+.app-design-img {
