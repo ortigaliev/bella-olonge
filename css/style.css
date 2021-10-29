@@ -92,6 +92,7 @@ img{
 }
 
 .site-logo {
+  display: block;
 }
 .site-list {
   display: flex;
@@ -99,7 +100,7 @@ img{
   margin-left: auto;
   font-size: 16px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 600; 
   font-family: "Montserrat" sans-serif;
   color: #252B42;
 
